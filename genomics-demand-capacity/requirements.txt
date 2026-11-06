@@ -1,0 +1,6 @@
+pandas>=2.2
+numpy>=1.26
+matplotlib>=3.8
+pytest>=8.0
+duckdb>=1.0       # only for tests/check_sql_with_duckdb.py
+sqlglot>=25.0     # only for tests/check_sql_with_duckdb.py
