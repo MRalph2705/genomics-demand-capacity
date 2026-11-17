@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Data Engineering Study Site</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <div class="wrap bar">
+    <a class="brand" href="#/today">Data Engineering Study Site</a>
+    <nav id="nav" aria-label="Main">
+      <a href="#/today" data-tab="today">Today</a>
+      <a href="#/topics" data-tab="topics">Course</a>
+      <a href="#/genomics" data-tab="genomics">Genomics project</a>
+      <a href="#/tracker" data-tab="progress">Progress</a>
+      <a href="#/method" data-tab="help">Help</a>
+    </nav>
+  </div>
+</header>
+<main class="wrap" id="app" aria-live="polite"></main>
+<footer class="wrap foot">Your ticks, streak and wins are saved in this browser only. Use Progress, then Export, to keep a copy.</footer>
+<script src="data/topics.js"></script>
+<script src="data/genomics.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
