@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Data Engineering Study Site</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <div class="wrap bar">
+    <a class="brand" href="#/topics">Data Engineering Study Site</a>
+    <nav id="nav" aria-label="Main">
+      <a href="#/topics" data-tab="topics">Topics</a>
+      <a href="#/tracker" data-tab="tracker">Tracker</a>
+      <a href="#/calendar" data-tab="calendar">Calendar</a>
+      <a href="#/genomics" data-tab="genomics">Genomics project</a>
+      <a href="#/method" data-tab="method">Method</a>
+    </nav>
+  </div>
+</header>
+<main class="wrap" id="app" aria-live="polite"></main>
+<footer class="wrap foot">Your ticks are saved in this browser only. Use Tracker, then Export, to keep a copy.</footer>
+<script src="data/topics.js"></script>
+<script src="data/genomics.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

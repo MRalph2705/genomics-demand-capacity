@@ -1,0 +1,76 @@
+:root{--bg:#fafaf7;--card:#fff;--ink:#1d2330;--mute:#5d6678;--line:#dcdfe6;--acc:#2f5fd0;--accbg:#e8eefc;--good:#1f7a4d;--goodbg:#e3f4ea;--warn:#a33a1f;--warnbg:#fbe9e4;--amb:#8a5a00;--ambbg:#fff1d6;--code:#f3f4f8}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#14171f;--card:#1c212c;--ink:#e8eaf0;--mute:#9aa3b5;--line:#323a4b;--acc:#8fb0ff;--accbg:#232d4a;--good:#6fd1a0;--goodbg:#173326;--warn:#ff9a7e;--warnbg:#3a211b;--amb:#f0c060;--ambbg:#3a2d12;--code:#232937}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:900px;margin:0 auto;padding:0 16px}
+.top{background:var(--card);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:5}
+.bar{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px;padding-top:10px;padding-bottom:10px}
+.brand{font-weight:700;color:var(--ink);text-decoration:none}
+nav a{display:inline-block;padding:6px 12px;margin-left:4px;border-radius:8px;color:var(--mute);text-decoration:none;font-weight:600}
+nav a.on{background:var(--accbg);color:var(--acc)}
+main{padding-top:20px;padding-bottom:40px}
+h1{font-size:1.6rem;margin:.2em 0 .4em}h2{font-size:1.2rem;margin:1.6em 0 .4em}h3{font-size:1rem;margin:1.2em 0 .2em}
+p{margin:.4em 0}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px;margin:10px 0}
+.mute{color:var(--mute)}.small{font-size:.88rem}
+.row{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.grow{flex:1 1 200px}
+.tag{display:inline-block;font-size:.78rem;font-weight:700;padding:2px 8px;border-radius:999px;background:var(--accbg);color:var(--acc)}
+.tag.sql{background:var(--ambbg);color:var(--amb)}.tag.ok{background:var(--goodbg);color:var(--good)}.tag.bad{background:var(--warnbg);color:var(--warn)}
+a{color:var(--acc)}
+.tl{display:block;text-decoration:none;color:inherit}
+.tl:hover .card{border-color:var(--acc)}
+.bar-o{height:10px;background:var(--line);border-radius:6px;overflow:hidden;position:relative}
+.bar-i{height:100%;background:var(--acc)}
+.bar-m{position:absolute;top:-3px;bottom:-3px;width:3px;background:var(--warn)}
+pre{background:var(--code);border:1px solid var(--line);border-radius:8px;padding:12px;overflow-x:auto;font:13px/1.5 ui-monospace,Menlo,Consolas,monospace;margin:.5em 0}
+.out{border-left:4px solid var(--good)}
+svg{width:100%;height:auto;max-width:100%}
+svg .bx{fill:var(--card);stroke:var(--line);stroke-width:1.5}
+svg .bxa{fill:var(--accbg);stroke:var(--acc);stroke-width:1.5}
+svg .bxg{fill:var(--goodbg);stroke:var(--good);stroke-width:1.5}
+svg .bxw{fill:var(--warnbg);stroke:var(--warn);stroke-width:1.5}
+svg{font-size:13px}svg .tx{fill:var(--ink);font-family:system-ui,sans-serif}
+svg .tb{font-weight:700}svg .tm{fill:var(--mute)}svg .ta{fill:var(--acc)}svg .tg{fill:var(--good)}svg .tw{fill:var(--warn)}
+svg .ln{stroke:var(--line);stroke-width:2}svg .ar{stroke:var(--mute);stroke-width:2;fill:none}svg .arg{stroke:var(--good)}
+svg .mk{fill:var(--mute)}svg .dot{fill:var(--mute)}svg .dotg{fill:none;stroke:var(--good);stroke-width:3}svg .dia{fill:var(--acc)}
+button,.btn{font:inherit;font-weight:600;padding:8px 14px;border-radius:8px;border:1px solid var(--line);background:var(--card);color:var(--ink);cursor:pointer}
+button.pri{background:var(--acc);border-color:var(--acc);color:#fff}
+@media (prefers-color-scheme:dark){button.pri{color:#10131a}}
+button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible,summary:focus-visible{outline:3px solid var(--acc);outline-offset:2px}
+details.rv{margin:.5em 0}details.rv summary{cursor:pointer;font-weight:700;color:var(--acc)}
+.rv .ans{margin-top:6px;padding:8px 12px;background:var(--goodbg);border-radius:8px}
+label.chk{display:flex;gap:10px;align-items:flex-start;padding:6px 0;cursor:pointer}
+input[type=checkbox]{width:20px;height:20px;margin-top:2px;accent-color:var(--acc)}
+input[type=date],textarea{font:inherit;padding:6px 8px;border:1px solid var(--line);border-radius:8px;background:var(--card);color:var(--ink)}
+textarea{width:100%;min-height:90px}
+table{border-collapse:collapse;width:100%}th,td{text-align:left;padding:8px 6px;border-bottom:1px solid var(--line);vertical-align:top}
+.stat{font-size:1.6rem;font-weight:800}
+.foot{color:var(--mute);font-size:.85rem;padding-bottom:30px}
+.late{color:var(--warn);font-weight:700}.ontime{color:var(--good);font-weight:700}
+@media (max-width:560px){nav a{margin-left:0;padding:6px 8px}}
+
+/* course map */
+details.mod{background:var(--card,#fff);border:1px solid var(--line,#d9dde5);border-radius:10px;padding:10px 14px;margin:12px 0}
+details.mod>summary{cursor:pointer;display:flex;flex-wrap:wrap;gap:4px 10px;align-items:baseline}
+.lrow{display:flex;align-items:center;gap:10px;padding:7px 4px;border-top:1px solid var(--line,#e3e6ec)}
+.lrow .lno{min-width:2.6em;font-variant-numeric:tabular-nums;color:var(--mute,#5d6678)}
+.lrow .grow,.row .grow{flex:1;min-width:0}
+a.tl{display:block;text-decoration:none;color:inherit}
+a.tl:hover .lrow{background:rgba(60,100,220,.08)}
+.row{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+.tag.mute{background:transparent;color:var(--mute,#5d6678);border:1px solid var(--line,#d9dde5)}
+
+.notes{margin-top:12px;padding:10px 14px;border-left:3px solid var(--accent,#3b5bdb);background:rgba(60,100,220,.06);border-radius:0 8px 8px 0}
+.notes ul{margin:6px 0 0 1.1em;padding:0}
+
+/* genomics project tab: pre-rendered markdown */
+.md h2{margin-top:1.4em}.md h3{margin-top:1.1em}
+.md ul,.md ol{padding-left:1.4em;margin:.4em 0}.md li{margin:.25em 0}
+.md code{background:var(--code);border-radius:4px;padding:1px 5px;font:.9em ui-monospace,Menlo,Consolas,monospace}
+.md pre code{background:none;padding:0}
+.md blockquote{margin:.8em 0;padding:8px 14px;border-left:4px solid var(--acc);background:var(--accbg);border-radius:0 8px 8px 0}
+.md hr{border:0;border-top:1px solid var(--line);margin:1.4em 0}
+.md table{display:block;overflow-x:auto}
+.md p,.md li{overflow-wrap:anywhere}
+.md pre{white-space:pre-wrap;overflow-wrap:anywhere}
