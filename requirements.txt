@@ -1,0 +1,6 @@
+pandas>=2.2
+numpy>=1.26
+matplotlib>=3.8
+pytest>=8.0
+duckdb>=1.0       # used by the SQL checks
+sqlglot>=25.0     # used by the SQL checks
